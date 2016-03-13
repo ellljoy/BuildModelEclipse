@@ -18,8 +18,6 @@
 //
 //	@Override
 //	public void initScene() {
-////		IParser parser = Parser.createParser(Parser.Type.OBJ,
-////				getResources(), "min3d.sampleProject1:raw/lowpolytree_obj",ture);
 //		IParser parser = Parser.createParser(Parser.Type.OBJ, 
 //				getResources(), "com.example.buildmodeleclipse:raw/lowpolytree_obj",false);
 //		parser.parse();
