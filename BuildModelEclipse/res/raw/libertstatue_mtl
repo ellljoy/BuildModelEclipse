@@ -1,0 +1,40 @@
+newmtl preview
+Ns 50
+Ka 0 0 0
+Kd 0.195441 0.263741 0.2537
+Ks 0.0237312 0.0522111 0.0793909
+newmtl 7___default
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.447059 0.447059 0.447059
+map_Kd liberty_greenbronze_1.bmp
+newmtl 2___default
+Ns 10
+Ka 0 0 0
+Kd 0.431373 0.431373 0.431373
+Ks 0.6 0.6 0.6
+map_Kd liberty_greenbronze_1.bmp
+newmtl 9___defaulta
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.203922 0.203922 0.203922
+map_Kd liberty_decorazionimarmo_2.bmp
+newmtl 7___porteblindate
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.6 0.6 0.6
+map_Kd liberty_portabronzo_1.bmp
+newmtl 8___defaulta
+Ns 10
+Ka 0 0 0
+Kd 0.8 0.8 0.8
+Ks 0.121569 0.121569 0.121569
+map_Kd liberty_mattonibasamento_1.bmp
+newmtl 2___fiamma
+Ns 10
+Ka 0 0 0
+Kd 0.709804 0.643137 0
+Ks 0.996078 0.839216 0.0901961

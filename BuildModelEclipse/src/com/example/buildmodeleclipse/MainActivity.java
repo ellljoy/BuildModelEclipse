@@ -17,6 +17,7 @@ import min3d.vos.Light;
 public class MainActivity extends RendererActivity {
 	private Object3dContainer objModel;
 	private Object3dContainer objModel2;
+	private Object3dContainer objModel3;
 
 	@Override
 	public void initScene() {
@@ -29,8 +30,9 @@ public class MainActivity extends RendererActivity {
 		parser.parse();
 
 		objModel = parser.getParsedObject();
-		objModel.position().x = -0.5f; 
-		objModel.scale().x = objModel.scale().y = objModel.scale().z = .5f;
+		objModel.position().x = -1f; 
+		objModel.position().z = -5f;
+		objModel.scale().x = objModel.scale().y = objModel.scale().z = .1f;
 		scene.addChild(objModel);
 		
 		// Model#2
@@ -39,15 +41,31 @@ public class MainActivity extends RendererActivity {
 		parser2.parse();
 
 		objModel2 = parser2.getParsedObject();
-		objModel2.position().x = 0.5f;
+		objModel2.position().x = -2f;
+		objModel2.position().x = -10f;
 		objModel2.scale().x = objModel2.scale().y = objModel2.scale().z = .3f;
 		scene.addChild(objModel2);
+		
+		// Model#3
+		IParser parser3 = Parser.createParser(Parser.Type.OBJ,
+				getResources(), "com.example.buildmodeleclipse:raw/castle_obj", true);
+		parser3.parse();
+
+		objModel3 = parser3.getParsedObject();
+		objModel3.position().x = 1f;
+		objModel3.position().z = -1f;
+		objModel3.scale().x = objModel3.scale().y = objModel3.scale().z = .1f;
+		scene.addChild(objModel3);
 	}
 
 	@Override
 	public void updateScene() {
 		objModel.rotation().x++;
 		objModel.rotation().z++;
+//		objModel2.rotation().x++;
+//		objModel2.rotation().z++;
+		objModel3.rotation().x++;
+		objModel3.rotation().z++; 
 	}
 }
 
