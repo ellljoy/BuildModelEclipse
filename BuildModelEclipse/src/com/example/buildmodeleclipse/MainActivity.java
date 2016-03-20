@@ -32,7 +32,7 @@ public class MainActivity extends RendererActivity {
 		objModel = parser.getParsedObject();
 		objModel.position().x = -1f; 
 		objModel.position().z = -5f;
-		objModel.scale().x = objModel.scale().y = objModel.scale().z = .1f;
+		objModel.scale().x = objModel.scale().y = objModel.scale().z = .3f;
 		scene.addChild(objModel);
 		
 		// Model#2
@@ -42,7 +42,7 @@ public class MainActivity extends RendererActivity {
 
 		objModel2 = parser2.getParsedObject();
 		objModel2.position().x = -2f;
-		objModel2.position().x = -10f;
+		objModel2.position().x = -2f;
 		objModel2.scale().x = objModel2.scale().y = objModel2.scale().z = .3f;
 		scene.addChild(objModel2);
 		
@@ -54,7 +54,7 @@ public class MainActivity extends RendererActivity {
 		objModel3 = parser3.getParsedObject();
 		objModel3.position().x = 1f;
 		objModel3.position().z = -1f;
-		objModel3.scale().x = objModel3.scale().y = objModel3.scale().z = .1f;
+		objModel3.scale().x = objModel3.scale().y = objModel3.scale().z = .03f;
 		scene.addChild(objModel3);
 	}
 
